@@ -74,6 +74,8 @@ JOIN article_author aa ON a.article_id = aa.article_id
 JOIN author au ON aa.author_id = au.author_id
 JOIN article_category ac ON a.article_id = ac.article_id
 JOIN category c ON ac.category_id = c.category_id;
+```
+
 
 # Blog Dinamis - Aplikasi Web
 
