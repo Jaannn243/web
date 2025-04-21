@@ -1,0 +1,177 @@
+/* Body dan dasar styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+/*Zoom in on the article*/
+.navbar {
+    background-color: #007BFF;
+    padding: 2px 4px;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);  /* Menambahkan bayangan tipis di belakang navbar */
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+}
+
+.navbar-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    margin-left: 20px;
+}
+
+.navbar-links li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar-links li a:hover {
+    text-decoration: underline;
+}
+
+/* Container artikel dengan pembatas di kiri dan kanan */
+.container {
+    width: 80%;
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #007BFF;  /* Pembatas kiri */
+    border-right: 4px solid #007BFF; /* Pembatas kanan */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Judul artikel */
+.article-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.article-header h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.article-header p {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Styling tanggal dan penulis */
+.article-meta {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.article-meta span {
+    margin-right: 10px; 
+}
+
+.article-meta .author {
+    font-weight: bold;
+}
+
+.article-meta .date {
+    color: #555;
+}
+
+.article-meta .category {
+    font-style: italic;
+}
+.article-category {
+    text-align: center;  /* Memusatkan kategori */
+    font-size: 18px;     /* Ukuran font kategori */
+    font-weight: bold;   /* Menebalkan teks kategori */
+    color: #007BFF;      /* Warna teks kategori */
+    margin-top: 10px;    /* Memberikan jarak antara kategori dan elemen di atasnya */
+    margin-bottom: 20px; /* Memberikan jarak antara kategori dan gambar */
+}
+/* Konten artikel */
+.article-content {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #444;
+    text-align: justify;
+}
+
+.article-content p {
+    margin-bottom: 15px;
+}
+
+.article-content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.article-content ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.article-content a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.article-content a:hover {
+    text-decoration: underline;
+}
+
+/* Styling footer untuk artikel */
+.article-footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+}
+
+.article-footer a {
+    color: #007BFF;
+}
+
+.article-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Styling gambar artikel */
+.article-image img {
+    width: 50%;  /* Membuat gambar memenuhi lebar kontainer */
+    height: auto; /* Menjaga proporsi gambar */
+    max-width: 800px;  /* Membatasi lebar gambar agar tidak terlalu besar */
+    margin-top: 20px; /* Memberikan jarak antara gambar dan konten di atasnya */
+    display: block; /* Menghilangkan jarak bawah otomatis pada gambar */
+    margin-left: auto; /* Memusatkan gambar */
+    margin-right: auto; /* Memusatkan gambar */
+}
